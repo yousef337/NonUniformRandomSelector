@@ -2,7 +2,6 @@ package NonUniformDistribution.NonUniformDistribution;
 
 import java.util.Arrays;
 import java.util.Random;
-
 /**
  *
  * This class represent a nonuniform selector using an array. The class in initialized with two arrays, an array of the
@@ -10,6 +9,9 @@ import java.util.Random;
  * probability array. This class provides the basic operations of a selector that perform its main functionalities.
  *
  * @param <E> the type of the values to be stored in the selector
+ *
+ * @author Yousef Altaher
+ * @version 2022-03-06
  */
 public class ArrayNonuniformSelector<E> implements NonuniformSelector <E>{
 
@@ -81,3 +83,4 @@ public class ArrayNonuniformSelector<E> implements NonuniformSelector <E>{
         return null;
     }
 }
+

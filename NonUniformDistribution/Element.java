@@ -3,6 +3,9 @@ package NonUniformDistribution.NonUniformDistribution;
 /**
  * This class represent an element in a selector. An element consist of a value and a probability for the element.
  * @param <E> The type of the values to be stored in this element.
+ *
+ * @author Yousef Altaher
+ * @version 2022-03-06
  */
 class Element <E> {
     private E value;
