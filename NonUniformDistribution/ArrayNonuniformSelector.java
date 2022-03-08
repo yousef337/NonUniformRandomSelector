@@ -58,7 +58,7 @@ public class ArrayNonuniformSelector<E> implements NonuniformSelector <E>{
      */
     @Override
     public boolean validateSelector(double[] probs) {
-        return Arrays.stream(probs).sum() == 1 || Arrays.stream(probs).sum() == 99/100.0;
+        return 1-Arrays.stream(probs).sum() < 0.00001;
     }
 
     /**
