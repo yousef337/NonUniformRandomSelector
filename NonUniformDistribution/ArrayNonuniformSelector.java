@@ -51,14 +51,14 @@ public class ArrayNonuniformSelector<E> implements NonuniformSelector <E>{
 
     /**
      * This method validate a double array of probabilities. An array of probability is valid if, and only if, the sum
-     * of all probabilities is 1.
+     * of all probabilities is 1, or it accounts for the imprecision 99/100.
      *
      * @param probs The array of probabilities to be validated
      * @return true if the array is valid, false otherwise.
      */
     @Override
     public boolean validateSelector(double[] probs) {
-        return Arrays.stream(probs).sum() == 1;
+        return Arrays.stream(probs).sum() == 1 || Arrays.stream(probs).sum() == 99/100.0;
     }
 
     /**
